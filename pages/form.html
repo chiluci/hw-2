@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+</head>
+<body>
+    <ul>
+        <li><a href="../index.html">Головна</a></li>
+        <li><a href="about.html">Про нас</a></li>
+        <li><a href="articles.html">Статті</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+        <li><a href="form.html">Форма</a></li>
+        <li><a href="anchors.html">Якоря</a></li>
+    </ul>
+    <form action="submit_meme" method="post">
+        <fieldset>
+          <legend>Особиста інформація</legend>
+          <label for="name">Ім'я:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Електронна пошта:</label>
+          <input type="email" id="email" name="email" required>
+        </fieldset>
+      
+        <fieldset>
+          <legend>Вибір категорії мему</legend>
+          <label for="meme-category">Категорія мему:</label>
+          <select id="meme-category" name="meme-category">
+            <option value="cats">Котики</option>
+            <option value="funny">Смішні</option>
+            <option value="dark">Чорний гумор</option>
+            <option value="classic">Класичні меми</option>
+          </select>
+        </fieldset>
+      
+        <fieldset>
+          <legend>Додайте свій мем</legend>
+          <label for="meme-title">Назва мему:</label>
+          <input type="text" id="meme-title" name="meme-title" required>
+      
+          <label for="meme-file">Завантажте мем (зображення):</label>
+          <input type="file" id="meme-file" name="meme-file" accept="image/*" required>
+        </fieldset>
+      
+        <fieldset>
+          <legend>Додаткові коментарі</legend>
+          <label for="comments">Ваш коментар:</label>
+          <textarea id="comments" name="comments" rows="4" placeholder="Чому цей мем особливий?"></textarea>
+        </fieldset>
+      
+        <input type="submit" value="Надіслати мем">      
+    </form>
+</body>
+</html>
